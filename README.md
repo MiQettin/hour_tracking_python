@@ -1,2 +1,80 @@
-# hour_tracking_python
-This repository contains Python based hour tracking app. Made with Gemini 2.5 Pro with temperature 2
+# AI Project Hour Tracker
+
+Made by Mirka Romppanen with Gemini 2.5 Pro with temperature setting 2
+
+This is a Python-based GUI tool for logging and tracking working hours in an AI project. The application uses Tkinter for the graphical user interface, and stores data in separate `.csv` files for each team member. A management dashboard shows team and subject summaries, including visualizations.
+
+## Features
+
+- **Log hours** with your name, date, number of hours, and work subject.
+- Each user's records are saved in a dedicated `.csv` file inside the `hour_tracking_files/` subfolder.
+- View total project hours, team member summaries, and hours by work subject.
+- Visualize data:  
+  - Bar chart (weekly hours)  
+  - Pie chart (work distribution by member)
+- Automatic creation of the data folder and new user files.
+- Add new users simply by entering a new name.
+
+## Installation
+
+1. **Clone this repository** and navigate to the folder.
+2. **Install requirements**:
+    ```
+    pip install -r requirements.txt
+    ```
+3. **Run the application**:
+    ```
+    python hour_tracker_gui.py
+    ```
+
+> The program will automatically create the `hour_tracking_files/` folder for storing data files.
+
+## Usage
+
+### Logging Hours
+
+- Enter/select your **full name**.
+- Pick the **date**.
+- Enter **hours worked** (use decimal format, e.g., `1.5`).
+- Select the **work subject**.
+- Click **"Log Hours"**.  
+  Your data will be saved to your own `.csv` file.
+
+### Manager Dashboard
+
+- Click **"Load/Refresh Project Data"** to update statistics.
+- View:
+  - **Total project hours**
+  - **Hours by team member**
+  - **Hours by work subject**
+  - **Bar chart** (weekly total hours)
+  - **Pie chart** (work distribution by member)
+
+### Notes
+
+- File names are ASCII-only (e.g., non-English letters are converted or removed).
+- If the `tkcalendar` library is missing, the app shows an error message with install instructions.
+
+## Requirements
+
+See [`requirements.txt`](./requirements.txt).
+
+- Python 3.8 or higher
+- Required libraries:
+    - pandas
+    - matplotlib
+    - tkcalendar
+
+Tkinter is included with most Python distributions.
+
+## Data Files
+
+- All data is stored in the `hour_tracking_files/` subfolder, which is created in the same directory as the script.
+- Each user's file is named `[username]_hours.csv`.
+
+## License
+
+Free to use and modify for any purpose.
+
+---
+
