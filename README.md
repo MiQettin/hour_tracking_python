@@ -1,6 +1,6 @@
 # AI Project Hour Tracker
 
-Made by Mirka Romppanen with Gemini 2.5 Pro with temperature setting 2
+Built by Mirka Romppanen using Gemini 2.5 Pro (temperature set to 2), according to Mirka's specifications.
 
 This is a Python-based GUI tool for logging and tracking working hours in an AI project. The application uses Tkinter for the graphical user interface, and stores data in separate `.csv` files for each team member. A management dashboard shows team and subject summaries, including visualizations.
 
@@ -26,6 +26,16 @@ This is a Python-based GUI tool for logging and tracking working hours in an AI 
     ```
     python hour_tracker_gui.py
     ```
+4. **Make sure Tkinter is installed:**:
+    Windows/Mac -> Tkinter is included in Python
+
+    Linux (Ubuntu/Debian etc.)
+    If you get an error like "ModuleNotFoundError: No module named 'tkinter'" when launching the app, install Tkinter using the command above.
+    ```
+    sudo apt-get update && sudo apt-get install python3-tk
+    ```
+
+
 
 > The program will automatically create the `hour_tracking_files/` folder for storing data files.
 
@@ -65,7 +75,7 @@ See [`requirements.txt`](./requirements.txt).
     - matplotlib
     - tkcalendar
 
-Tkinter is included with most Python distributions.
+Tkinter is included with most Python distributions. In Linux check the instructions above.
 
 ## Data Files
 
