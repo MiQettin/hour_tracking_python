@@ -42,8 +42,13 @@ Uses safe ASCII-only filenames to avoid issues with special characters
     ```
 
 4. **Run the application**:
+    Linux:  
     ```
     python3 hour_tracking_v2.py
+    ```
+    Windows:  
+    ```
+    python hour_tracking_v2.py
     ```
 
 
