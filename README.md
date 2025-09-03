@@ -32,11 +32,7 @@ Uses safe ASCII-only filenames to avoid issues with special characters
     ```
     pip install -r requirements.txt
     ```
-3. **Run the application**:
-    ```
-    python hour_tracker_gui.py
-    ```
-4. **Make sure Tkinter is installed:**:
+3. **Make sure Tkinter is installed:**:
     Windows/Mac -> Tkinter is included in Python
 
     Linux (Ubuntu/Debian etc.)
@@ -45,6 +41,10 @@ Uses safe ASCII-only filenames to avoid issues with special characters
     sudo apt-get update && sudo apt-get install python3-tk
     ```
 
+4. **Run the application**:
+    ```
+    python3 hour_tracking_v2.py
+    ```
 
 
 > The program will automatically create the `hour_tracking_files/` folder for storing data files.
